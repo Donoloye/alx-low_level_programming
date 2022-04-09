@@ -1,27 +1,27 @@
 #include <stdio.h>
 /**
- * main - Entry point
- * combining two digit numbers
- * Return: 0 Always
+ * main - Prints all possible combinations of two two-digit numbers,
+ * ranging from 0-99, separated by a comma followed by a space.
+ * Return: Always 0.
  */
 int main(void)
 {
-int dgt1, dgt2
-for (dgt1 = 0; dgt1 <= 98; dgt1++)
+int num1, num2;
+for (num1 = 0; num1 <= 98; num1++)
 {
-for (dgt2 = dgt1 + 1; dgt2 <= 99; dgt2++)
+for (num2 = num1 + 1; num2 <= 99; num2++)
 {
-putchar((dgt1 / 10) + '0');
-putchar((dgt1 % 10) + '0');
+putchar((num1 / 10) + '0');
+putchar((num1 % 10) + '0');
 putchar(' ');
-putchar((dgt2 / 10) + '0');
-putchar((dgt2 % 10) + '0');
-if (dgt1 == 98 && dgt2 == 99)
+putchar((num2 / 10) + '0');
+putchar((num2 % 10) + '0');
+if (num1 == 98 && num2 == 99)
 continue;
 putchar(',');
 putchar(' ');
 }
 }
 putchar('\n');
-retuen (0);
+return (0);
 }
