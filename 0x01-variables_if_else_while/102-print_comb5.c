@@ -3,7 +3,7 @@
  * main - Entry point
  * combining two digit numbers
  * Return: 0 Always
- * /
+ */
 int main(void)
 {
 int dgt1, dgt2
