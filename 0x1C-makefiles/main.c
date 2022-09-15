@@ -7,7 +7,6 @@
  */
 int main(void)
 {
-	print_best();
+	print_holberton();
 	return (EXIT_SUCCESS);
 }
-/* Holberton */

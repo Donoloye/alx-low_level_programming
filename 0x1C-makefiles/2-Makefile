@@ -1,7 +1,7 @@
 CC = gcc
-SRC = main.c best.c
-OBJ = $(SRC:%.c=%.o)
-NAME = best
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
+NAME = school
 
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
