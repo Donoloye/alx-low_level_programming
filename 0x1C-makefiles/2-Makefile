@@ -1,0 +1,7 @@
+CC = gcc
+SRC = main.c best.c
+OBJ = $(SRC:%.c=%.o)
+NAME = best
+
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
